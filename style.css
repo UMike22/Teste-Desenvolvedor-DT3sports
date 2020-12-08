@@ -1,36 +1,139 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: black;
 }
+
 header {
     width: 100%;
     height: 100px;
     background-color: #FA8BFF;
     background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
-
 }
+
 .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .logo {
     height: 80px;
     margin-top: 10px;
 }
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    background-color: #fff;
+    width: 27px;
+    height: 5px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
 .HomeList {
     display: flex;
+    align-items: center;
 }
+
+.HomeList li {
+    padding: 0 40px;
+}
+
 .HomeList li a {
-    margin-left: 20px;
+    position: relative;
     text-decoration: none;
     font-size: 20px;
+    letter-spacing: 8px;
+    font-weight: bold;
     line-height: 40px;
     color: #FDF7FA;
     font-weight: 500;
     transition: color 300ms linear;
-    
-
 }
+
+.HomeList li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 3px;
+    border-radius: 5%;
+    transition: width 250ms ease-in-out;
+}
+
+.HomeList li a:hover::after {
+    width: 100%;
+}
+
 .HomeList li a:hover {
-    color: rgba(27, 38, 59 , 0.4);
+    color: rgba(27, 38, 59, 0.4);
+}
+
+
+/* PARTE RESPONSIVA */
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .logo {
+        margin: 10px auto;
+    }
+    .HomeList {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 0vh;
+        width: 40vw;
+        background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 50px;
+        border-radius: 5%;
+        flex-direction: column;
+        justify-content: space-aro;
+        align-items: center;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .HomeList li {
+        margin-top: 20vh;
+    }
+    .HomeList li a {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 120px;
+        z-index: 1;
+    }
+    .HomeList-active {
+        transform: translateX(0%);
+    }
+    .content {
+        position: relative;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 400ms linear;
+    }
+    .overlay-active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
