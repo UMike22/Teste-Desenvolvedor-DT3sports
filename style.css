@@ -112,80 +112,95 @@ header {
     width: 100%;
     height: 100%;
 }
-
+ 
 
 /* SLIDE */
-
-.section-slide {
+.wrapper-slide{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
-    height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #2BD2FF;
-    margin-bottom: 100px;
-}
+    background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.slider {
+  }
+  
+  .slider{
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.slides {
+    box-shadow: 7px 5px 22px -4px rgba(0,0,0,0.88);
+  }
+  
+  .slides{
     width: 500%;
     height: 500px;
     display: flex;
-}
-
-.slides input {
+  }
+  
+  .slides input{
     display: none;
-}
-
-.slide {
+  }
+  
+  .slide{
     width: 20%;
     transition: 2s;
-}
-
-.slide img {
+  }
+  
+  .slide img{
     width: 800px;
     height: 800px;
-}
-
-.navigation {
+  }
+  
+ 
+  
+  .navigation-manual{
     position: absolute;
     width: 800px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
-}
-
-.manual-btn {
+  }
+  
+  .manual-btn{
     border: 2px solid red;
-    padding: 7px;
+    padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
+  }
+  
+  .manual-btn:not(:last-child){
     margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: #D6001C;
-}
-
-#radio1:checked~.first {
+  }
+  
+  .manual-btn:hover{
+    background: red;
+  }
+  
+  #radio1:checked ~ .first{
     margin-left: 0;
-}
-
-#radio2:checked~.first {
+  }
+  
+  #radio2:checked ~ .first{
     margin-left: -20%;
-}
-
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+    
+  }
+  
+  
 
 /* PARTE RESPONSIVA */
 
@@ -253,4 +268,144 @@ header {
     .slogan2 {
         font-size: 50px;
     }
+    .sub-title {
+        position: absolute;
+        top: 60px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+@media screen and (max-width:700px){
+    
+    
+    .wrapper-slide{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      .slider{
+        width: 600px;
+        height: 500px;
+        
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+      }
+      
+      .slides input{
+        display: none;
+      }
+      
+      .slide{
+        width: 20%;
+        transition: 2s;
+      }
+      
+      .slide img{
+        width: 600px;
+        height: 600px;
+      }
+      
+      /*css for manual slide navigation*/
+      
+      .navigation-manual{
+        position: absolute;
+        width: 600px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .manual-btn{
+        
+        border: 2px solid red;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+      }
+}
+@media screen and (max-width:600px){
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 100px;
+        z-index: 1;
+    }
+    .wrapper-slide{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .slogan,
+    .slogan-gamer,
+    .slogan-sub,
+    .slogan2 {
+        font-size: 40px;
+    }
+      
+      .slider{
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+      }
+      
+      .slides input{
+        display: none;
+      }
+      
+      .slide{
+        width: 20%;
+        transition: 2s;
+      }
+      
+      .slide img{
+        width: 500px;
+        height: 500px;
+      }
+      
+      /*css for manual slide navigation*/
+      
+      .navigation-manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -130px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .manual-btn{
+        
+        border: 2px solid red;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+      }
 }
