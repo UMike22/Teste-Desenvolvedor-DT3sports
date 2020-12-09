@@ -203,7 +203,7 @@ header {
     
   }
   
-  /*  PARTICULARS ANIMATION */
+  /*=============================== PARTICULARS ANIMATION  ============================*/ 
   .wrapper {
       max-width: 900px;
       margin: 0 auto;
@@ -357,10 +357,23 @@ header {
         font-weight: normal;
     }
 
+    [data-anime]{
+      opacity: 0;
+      transition: 1s ;
+    }
+    [data-anime="left"]{
+      transform: translate3d(-50%, 0, 0);
+    }
+    [data-anime="right"]{
+      transform: translate3d(50%, 0, 0);
+    }
+    [data-anime].animate{
+      opacity: 1;
+      transform: translate3d(0px,0px,0px);
+    }
+/*=============================== END PARTICULAR ANIMATION ===============================*/
 
 /* FOOTER RESPONSIVE */
-
-
 
 footer{
   position: relative;
@@ -678,6 +691,9 @@ footer{
         cursor: pointer;
         margin-right: 100px;
         z-index: 1;
+    }
+    .HomeList-active{
+      width: 50vw;
     }
     .wrapper-slide{
         margin: 0;
