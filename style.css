@@ -225,7 +225,7 @@ header {
  }
  .design {
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    border-image: linear-gradient(to left, #240b36, #c31432) 1;
     
     padding: 40px;
     border-radius: 10px;
@@ -245,7 +245,7 @@ header {
     }
     .structure {
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    border-image: linear-gradient(to left, #240b36, #c31432) 1;
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -262,7 +262,7 @@ header {
     }
     .frog{
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
+    border-image: linear-gradient(to left, #240b36, #c31432)1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -278,7 +278,7 @@ header {
     }
     .wheel{
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
+    border-image: linear-gradient(to left, #240b36, #c31432) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -294,7 +294,7 @@ header {
     }
     .base{
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
+    border-image: linear-gradient(to left, #240b36, #c31432) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -310,7 +310,7 @@ header {
     }
     .pillow{
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
+    border-image: linear-gradient(to left, #240b36, #c31432) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -326,7 +326,7 @@ header {
     }
     .recline{
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
+    border-image: linear-gradient(to left, #240b36, #c31432) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -342,7 +342,7 @@ header {
     }
     .warranty{
     border: 3px solid;    
-    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
+    border-image: linear-gradient(to left, #240b36, #c31432) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
