@@ -471,7 +471,7 @@ footer{
 .right form textarea:focus{
   outline-color: #3498db;
 }
-.right form input{
+.right form input {
   height: 35px;
 }
 .right form .btn{
