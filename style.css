@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F9F9F9;
+    overflow-x: hidden;
 }
 
 header {
@@ -505,29 +506,39 @@ footer{
   background: #000;
   color: #fff;
 }
-.bottom center{
-  padding: 5px;
-  font-size: 0.9375rem;
-  background: #151515;
+.arrow {
+ width: 64px;
+ height: 64px;
+ position: relative; 
 }
-.bottom center span{
-  color: #656565;
+.arrow a {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background-image: url(/img-rhino/angulo-da-seta-para-cima.png);
+  background-color: #fff;
+  border-radius:10px;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  animation: arrowMove 1s ease infinite alternate;
 }
-.bottom center a{
-  color: #f12020;
-  text-decoration: none;
+
+@keyframes arrowMove {
+  to {
+    transform: translateY(40px);
+    opacity: 0;
+  }
 }
-.bottom center a:hover{
-  text-decoration: underline;
-}
+
 .logo-footer{
   margin-top: 20px;
 }
 .logo-footer img {
   width: 150px;
-  height: 150px;
-  
-  
+  height: 150px;  
 }
 
 /* RESPONSIVE */
@@ -689,11 +700,11 @@ footer{
     .burger {
         display: block;
         cursor: pointer;
-        margin-right: 100px;
+        margin-right: 130px;
         z-index: 1;
     }
     .HomeList-active{
-      width: 50vw;
+      width: 40vh;
     }
     .wrapper-slide{
         margin: 0;
@@ -756,4 +767,42 @@ footer{
         cursor: pointer;
         transition: 1s;
       }
+      .design , .structure , .frog, .wheel,.base,.pillow,.recline, .warranty{
+        padding: 20px;
+        
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+        font-family: 'Poppins' , sans-serif;
+    }
+    
+}
+
+@media screen and (max-width:420px){
+  .wrapper-slide{
+    display: none;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    z-index: 1;
+}
+.HomeList {
+  width: 50vw;
+
+}
+.HomeList li {
+  margin-top: 12vh;
+  
+}
+.HomeList li a {
+  font-size: 14px;
+}
+
 }
