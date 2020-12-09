@@ -217,16 +217,19 @@ header {
       align-content: center;
       align-items: center;
       gap: 20px;
+      font-family: 'Poppins' , sans-serif;
   }
  .particulars {
     background-color: #141212;
     padding-top: 40px;
  }
  .design {
-    border: 2px solid #fff;
-     padding: 40px;
-     border-radius: 10px;
-     font-weight: bold;
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: bold;
     
  }
  .design-title{
@@ -241,11 +244,12 @@ header {
     font-weight: normal;
     }
     .structure {
-    border: 2px solid #fff;
-     padding: 40px;
-     border-radius: 10px;
-     font-weight: bold;
-     line-height: 30px;
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 30px;
      
     }
     .structure-title{
@@ -257,7 +261,8 @@ header {
         font-weight: normal;
     }
     .frog{
-    border: 2px solid #fff;; 
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -272,7 +277,8 @@ header {
         font-weight: normal;
     }
     .wheel{
-    border: 2px solid #fff;; 
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -287,7 +293,8 @@ header {
         font-weight: normal;
     }
     .base{
-    border: 2px solid #fff;; 
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -302,7 +309,8 @@ header {
         font-weight: normal;
     }
     .pillow{
-    border: 2px solid #fff;; 
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -317,7 +325,8 @@ header {
         font-weight: normal;
     }
     .recline{
-    border: 2px solid #fff;; 
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -332,7 +341,8 @@ header {
         font-weight: normal;
     }
     .warranty{
-    border: 2px solid #fff;; 
+    border: 3px solid;    
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; 
     padding: 40px;
     border-radius: 10px;
     font-weight: bold;
@@ -346,8 +356,182 @@ header {
     .warranty-content{
         font-weight: normal;
     }
+
+
+/* FOOTER RESPONSIVE */
+
+
+
+footer{
+  position: relative;
+  padding: 20px;
+  bottom: 0px;
+  width: 100%;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+  line-height: 25px;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+  
+}
+.left .content .social a{
+  padding: 0 2px;
+  color: #d9d9d9;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: #d9d9d9;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+  color: #fff;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+.logo-footer{
+  margin-top: 20px;
+}
+.logo-footer img {
+  width: 150px;
+  height: 150px;
+  
+  
+}
+
 /* RESPONSIVE */
 
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -401,6 +585,7 @@ header {
         position: fixed;
         top: 0;
         bottom: 0;
+        right: 0;
         opacity: 0;
         visibility: hidden;
         transition: all 400ms linear;
